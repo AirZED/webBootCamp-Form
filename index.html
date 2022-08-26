@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83226b2274.js" crossorigin="anonymous"></script>
+    <title>Simple Registration Form</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="submit" class="form">
+            <div class="form-input">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+
+            <div class="form-input">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input type="password" name="password" id="password" placeholder="Enter Your Password">
+            </div>
+
+            <div class="form-input">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input type="password" name="password" id="password2" placeholder="Re-Enter Your Password">
+            </div>
+
+
+            <div class="names">
+                <div class="form-input">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                </div>
+
+                <div class="form-input">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                </div>
+
+            </div>
+
+            <div class="gender">
+                <label for="male"><input type="radio" name="gender" id="male">Male</label>
+                <label for="female"><input type="radio" name="gender" id="female">Female</label>
+            </div>
+
+            <select name="Country" id="country">
+                <option value="Select a Country" selected disabled>Select a Country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="France">France</option>
+                <option value="Algeria">Algeria</option>
+                <option value="USA">USA</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+
+            <div class="conditions">
+                <label for=""><input type="checkbox" name="conditions" id="terms"> I agree with the terms and
+                    conditions</label>
+                <label for=""><input type="checkbox" name="conditions" id="newsletters"> I want to receive the
+                    newsletters</label>
+            </div>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+
+</html>
